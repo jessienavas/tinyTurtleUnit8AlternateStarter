@@ -5,14 +5,14 @@
 
 function TinyTurtle(canvas) {
   canvas = canvas || document.querySelector('canvas');
-  console.log(canvas)
+
   var self = this;
   var rotation = 90;
   var position = {
     // See http://diveintohtml5.info/canvas.html#pixel-madness for
     // details on why we're offsetting by 0.5.
     x: canvas.width / 2 + 0.5,
-    y: canvas.height / 2 + 0.5,
+    y: canvas.height / 2 + 0.5
   };
   var isPenDown = true;
   var radians = function(r) {return 2 * Math.PI * (r / 360) };
